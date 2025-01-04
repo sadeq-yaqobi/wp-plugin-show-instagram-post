@@ -1,0 +1,82 @@
+.instagram-wrapper {
+    padding:0 0 30px
+}
+h4.instagram-title {
+    margin-bottom:20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.d-flex {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.instagram-posts {
+display: grid;
+grid-template-columns: auto auto auto;
+gap:8px
+}
+.instagram-posts:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.instagram-posts div a img {
+    width: 100%;
+    height:85px;
+    border-radius: 1px;
+    filter: brightness(.8);
+    transition:all .3s ease-in-out;
+}
+.instagram-posts div a img:hover {
+    filter: brightness(1);
+}
+.item-wrapper {
+    position: relative;
+    transition:all .3s ease-in-out;
+}
+.item-wrapper:hover {
+    transform: translateY(-2px);
+}
+
+
+.inp-like-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1px;
+    left: 3px;
+ }
+.inp-like-counter {
+    font-size: 10px;
+    color: #f8f8ff;
+    margin-left: 3px;
+}
+
+.inp-like-icon {
+    width: 11px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    background: url("../../img/heart-white.svg") no-repeat center;
+    background-size: 100%;
+
+}
+.instagram-error {
+    padding: 15px;
+    background-color: #fff3f3;
+    border: 1px solid #ffcdd2;
+    border-radius: 4px;
+    color: #d32f2f;
+    margin: 10px 0;
+}
+
+.instagram-empty {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #757575;
+    text-align: center;
+}
